@@ -884,7 +884,7 @@ class HttpFlood(Thread):
             '--http2',
             '--method=GET',
             '--no-print',
-            '--timeout=5s',
+            '--timeout=60s',
             f'--requests={self._rpc}',
             f'--proxy={pro}',
             f'{self._target.human_repr()}',
